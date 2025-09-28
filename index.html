@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINGS2GO - Premium Chicken Wings Delivery</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'wingstop-red': '#E31837',
+                        'wingstop-yellow': '#FFB81C',
+                        'wingstop-black': '#000000',
+                        'wingstop-gray': '#333333'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Montserrat', sans-serif; }
+        .hero-bg { background-image: url('http://static.photos/food/1200x630/1'); }
+        .flavor-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .btn-primary { background-color: #E31837; color: white; }
+        .btn-primary:hover { background-color: #c1122d; }
+        .btn-secondary { background-color: #FFB81C; color: black; }
+        .btn-secondary:hover { background-color: #e6a619; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-wingstop-black text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-wingstop-yellow">WINGS2GO</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#menu" class="hover:text-wingstop-yellow transition">MENU</a>
+                    <a href="#flavors" class="hover:text-wingstop-yellow transition">FLAVORS</a>
+                    <a href="#about" class="hover:text-wingstop-yellow transition">ABOUT</a>
+                    <a href="#contact" class="hover:text-wingstop-yellow transition">CONTACT</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="tel:71319602" class="bg-wingstop-red px-4 py-2 rounded-full font-semibold hover:bg-red-700 transition">
+                        ORDER NOW: 71 31 96 02
+                    </a>
+                    <button class="md:hidden text-white">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg bg-cover bg-center bg-gray-900 bg-blend-multiply">
+        <div class="container mx-auto px-4 py-32 text-center text-white">
+            <h2 class="text-5xl md:text-7xl font-bold mb-6"> REAL NEW YORK WINGS</h2>
+            <p class="text-xl md:text-2xl mb-8">Fresh, authentic wings delivered  to your door</p>
+            <div class="space-x-4">
+                <a href="#menu" class="btn-primary px-8 py-3 rounded-full text-lg font-bold inline-block">VIEW MENU</a>
+                <a href="tel:71319602" class="btn-secondary px-8 py-3 rounded-full text-lg font-bold inline-block">ORDER NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flavors Section -->
+    <section id="flavors" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">AMERICAS SIGNATURE FLAVORS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Buffalo -->
+                <div class="flavor-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="http://static.photos/food/320x240/10" alt="Buffalo Wings" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Broad Street Buffalo</h3>
+                        <p class="text-gray-600">Classic spicy buffalo sauce just like in Buffalo, New York glazed on top of double fried wings</p>
+                    </div>
+                </div>
+                <!-- BBQ -->
+                <div class="flavor-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="http://static.photos/food/320x240/11" alt="BBQ Wings" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Brotherly Love BBQ</h3>
+                        <p class="text-gray-600">Sweet and smoky barbecue coated double fried wings, just like how they do it in Philly</p>
+                    </div>
+                </div>
+                <!-- Garlic Parm -->
+                <div class="flavor-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="http://static.photos/food/320x240/12" alt="Garlic Parm Wings" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Fly Eagles Fly</h3>
+                        <p class="text-gray-600">Garlic butter and parmesan, the wing for champions!</p>
+                    </div>
+                </div>
+                <!-- Lemon Pepper -->
+                <div class="flavor-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="http://static.photos/food/320x240/13" alt="Lemon Pepper Wings" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Liberty Bell Lemon Pepper</h3>
+                        <p class="text-gray-600">Zesty lemon with black pepper, perfect balance, southern style</p>
+                    </div>
+                </div>
+                <!-- Dery -->
+                <div class="flavor-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="http://static.photos/food/320x240/14" alt="Dery Wings" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">DRY RUB</h3>
+                        <p class="text-gray-600">Special house seasoning, no sauce, no mess</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">OUR MENU</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-wingstop-red text-white p-4 rounded-t-lg">
+                    <h3 class="text-2xl font-bold">CHICKEN WINGS</h3>
+                </div>
+                <div class="border border-gray-200 rounded-b-lg">
+                    <div class="p-6 border-b border-gray-200">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-lg">Chicken Wings</h4>
+                                <p class="text-gray-600">Side of fries + free mini dessert (Broad street Buffalo, Brotherly Love BBQ,Liberty Bell Lemon Pepper, Dry Rub,Fly Eagles Fly)</p>
+                            </div>
+                            <span class="font-bold text-lg">Starting at $9.99</span>
+                        </div>
+                    </div>
+                    <div class="p-6 border-b border-gray-200">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-lg">Extra Side of Fries</h4>
+                                <p class="text-gray-600"> Extra Crispy fries fried to perfection</p>
+                            </div>
+                            <span class="font-bold text-lg">Starting at $2.50</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-lg">"Open" Wings </h4>
+                                <p class="text-gray-600">35 wings + double fries</p>
+                            </div>
+                            <span class="font-bold text-lg">$25.25</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">ABOUT WINGS2GO</h2>
+                    <p class="text-lg mb-4">Located in Baqaata El Shouf, WINGS2GO brings you premium quality, authentic chicken wings the way they make them in America, chicken and flavor, not breading and gimmicks. Delivery only, we will deliver your wings hot and fresh to your door.</p>
+                    <p class="text-lg mb-6">We specialize in delivery-only service, ensuring your wings arrive perfectly crispy and delicious every time.</p>
+                    <div class="bg-wingstop-yellow p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-2">HOURS OF OPERATION</h3>
+                        <p class="mb-1">Monday - Wednesday: 12:00 PM - 2:00 AM</p>
+                        <p>Friday - Sunday: 12:00 PM - 2:00 AM</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="http://static.photos/restaurant/640x360/5" alt="WINGS2GO Kitchen" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-wingstop-black text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">CONTACT US</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="bg-wingstop-red w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="phone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">CALL TO ORDER</h3>
+                    <p class="text-wingstop-yellow text-lg font-bold">71 31 96 02</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-wingstop-red w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="map-pin"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">LOCATION</h3>
+                    <p>Baqaata El Shouf<br>Delivering to surrounding areas</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-wingstop-red w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">HOURS</h3>
+                    <p>Mon-Wed: 12PM-2AM<br>Fri-Sun: 12PM-2AM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold text-wingstop-yellow">WINGS2GO</h3>
+                    <p class="text-gray-400">Premium Wings Delivery</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">&copy; 2024 WINGS2GO. All rights reserved.</p>
+                    <p class="text-gray-400">Baqaata El Shouf, Lebanon</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
